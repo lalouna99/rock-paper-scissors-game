@@ -1,0 +1,37 @@
+Pseudocode:
+
+HTML Document:
+- Declare an HTML document with a title.
+- Include a script tag to write JavaScript code.
+- Create an HTML body with a heading for instructions.
+
+JavaScript Functions:
+- Function getComputerChoice():
+  - Create an array called choices with 'Rock', 'Paper', and 'Scissors'.
+  - Generate a random index within the range of the array length.
+  - Return the choice at the random index.
+
+- Function playRound(playerSelection, computerSelection):
+  - Convert playerSelection to lowercase.
+  - If playerSelection is the same as computerSelection (case-insensitive), return a tie message.
+  - If playerSelection beats computerSelection, return a win message.
+  - If computerSelection beats playerSelection, return a loss message.
+
+- Function game():
+  - Initialise playerScore and computerScore to 0.
+  - Repeat the following 5 times:
+    - Prompt the player for their choice (rock, paper, or scissors) and store it in playerSelection.
+    - Get the computer's choice using getComputerChoice and store it in computerSelection.
+    - Calculate the result of the round using playRound with playerSelection and computerSelection.
+    - Print the round result to the console.
+    - Update playerScore and computerScore based on the round result.
+  - Determine the overall game result:
+    - If playerScore is greater than computerScore, print "You win!".
+    - If playerScore is less than computerScore, print "You lose!".
+    - If playerScore is equal to computerScore, print "It's a tie!".
+
+Game Initialisation:
+- Call the game() function to start the Rock, Paper, Scissors game.
+
+HTML Body:
+- Display instructions to the player, explaining how to play the game using the browser console.
